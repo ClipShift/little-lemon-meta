@@ -8,24 +8,6 @@ import image4 from '../assets/image4.jpg';
 import image5 from '../assets/image5.jpg';
 import ReservationForm from './ReservationForm';
 
-const Example = () => {
-	return (
-		<div className="bg-neutral-800">
-			{/* <div className="flex h-48 items-center justify-center">
-				<span className="font-semibold uppercase text-neutral-500">
-					Scroll down
-				</span>
-			</div> */}
-			<HorizontalScrollCarousel />
-			{/* <div className="flex h-48 items-center justify-center">
-				<span className="font-semibold uppercase text-neutral-500">
-					Scroll up
-				</span>
-			</div> */}
-		</div>
-	);
-};
-
 export const HorizontalScrollCarousel = ({ motionTemp, setMouseVariant }) => {
 	const targetRef = useRef(null);
 	const { scrollYProgress } = useScroll({
